@@ -628,7 +628,7 @@ class TICC1101(object):
                 print("VAL: %d".format((val)))
                 print("LQI: %d".format((lqi)))
 
-            print("Data: ") + str(data)
+            print("Data: " + str(data))
 
             self._flushRXFifo()
             return data
