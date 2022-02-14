@@ -20,6 +20,7 @@ with USB1101(port = 'COM3', baud_rate = 9600) as cc:
     cc.send(array('B', range(45)))
 
     for c in range(255):
+        print(c)
         cc.send(array('B', range(45)))
         # try:
         #     # cc.send(array('B', range(45)))
